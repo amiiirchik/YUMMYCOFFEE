@@ -107,14 +107,15 @@ iframe{
 .products{
     display: flex;
     flex-wrap: wrap;
-    background: red;
+    /* background: red; */
     width: 1280px;
     min-width: 1280px;
     margin: 0 auto;
+    height: 400px;
     justify-content: space-between;
 }
 
-.item{
+.products .item{
     width: 316px;
     height: 312px;
     background: #FFFFFF;
@@ -126,7 +127,7 @@ iframe{
     font-size: 14.5px;
 }
 
-.item b{
+.products .item b{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -140,18 +141,54 @@ iframe{
     width: 92%;
 }
 
-#p1{
+.catalogBtn{
     width: 100%;
-    height: 4px;
-    border-radius: 47px;
-    background-color: #928888;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 115px;
+    align-items: center;
 }
 
-#p2{
-    height: 4px;
-    width: 70%;
-    border-radius: 47px;
-    background-color: black;
-    position: relative;
+.catalogBtn a{
+    background: black;
+    color: white;
+    width: 140px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Mont';
+    text-decoration: none;
+    transition: .5s;
+    align-self: stretch;
+}
+
+.catalogBtn a:hover{
+    background: white;
+    color: black;
+    box-shadow: 2px 4px solid black;
+}
+
+.advantages{
+    background: #262323;
+    width: 100%;
+    min-height: 420px;
+    min-width: 1280px;
+    display: flex;
+    align-items: center;
+}
+
+.advantages .item{
+    width: 31%;
+    text-align: center;
+    font-family: 'Mont';
+    font-size: 18px;
+    color: white;
+    border-right: 1px solid #131212;
+    margin: 0 15px;
+}
+
+.advantages .item:nth-child(3){
+    border-right: none;
 }
