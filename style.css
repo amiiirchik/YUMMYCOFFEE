@@ -107,7 +107,6 @@ iframe{
 .products{
     display: flex;
     flex-wrap: wrap;
-    background: red;
     width: 1280px;
     min-width: 1280px;
     margin: 0 auto;
@@ -116,6 +115,45 @@ iframe{
 
 .item{
     width: 316px;
-    height: 312px;
+    height: 360px;
     background: #FFFFFF;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 8px;
+}
+
+.bars{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.buy-menu{
+    background: #D6BECB;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-menu a{
+    background: black;
+    width: 140px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: .6s;
+    justify-content: center;
+}
+
+.buy-menu a:hover{
+    background: rgb(61, 61, 61);
+}
+
+.buy-menu img{
+    padding-left: 20px;
 }
