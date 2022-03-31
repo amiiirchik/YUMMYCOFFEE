@@ -1,4 +1,6 @@
 @import "fonts/fonts.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;800&display=swap');
 
 html, body{
     width: 100%;
@@ -8,19 +10,28 @@ html, body{
     justify-content: center;
 }
 
+body{
+    background: #FFEDD8;
+}
+
 /* Сетка */
 .wrap{
     width: 1280px;
     height: 100%;
     display: flex;
     margin: 0 auto;
-    /* background: rgba(0, 0, 0, .3); */
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    font-family: 'Mont';
+}
+
+.bio .wrap{
+    flex-direction: column;
+    height: 0px;
 }
 
 header{
-    background: #D6BECB;
+    background: #FFEDD8;
     width: 100%;
     min-width: 1280px;
     height: 70px;
@@ -49,14 +60,14 @@ header p{
     justify-content: space-between;
 }
 
-.links{
+nav{
     display: flex;
     flex-direction: row;
     width: 47%;
     justify-content: space-between;
 }
 
-.links a{
+nav a{
     text-decoration: none;
     color: black;
 }
@@ -67,7 +78,7 @@ span a{
 }
 
 span a:hover{
-    color: black;
+    color: black !important;
     letter-spacing: .7px;
 }
 
@@ -77,19 +88,12 @@ span a:hover{
     height: 550px;
     background: goldenrod;
 }
-
-iframe{
-    width: 1920px;
-    height: 100%;
-}
-
 /* Акции */
 .sales{
-    /* background: #EFEFEF; */
-    background: blanchedalmond;
+    background: #FFEDD8;
     width: 100%;
     min-width: 1280px;
-    min-height: 500px;
+    min-height: 700px;
 }
 
 /* Блок с текстом в Акциях */
@@ -100,95 +104,231 @@ iframe{
     align-items: center;
     justify-content: space-around;
     font-size: 22px;
-    font-family: 'Mont';
 }
 
 /* Товар */
 .products{
     display: flex;
     flex-wrap: wrap;
-    /* background: red; */
     width: 1280px;
-    min-width: 1280px;
+    min-width: 1000px;
     margin: 0 auto;
-    height: 400px;
     justify-content: space-between;
 }
 
-.products .item{
+.item{
     width: 316px;
-    height: 312px;
+    height: 420px;
     background: #FFFFFF;
-    padding: 15px;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-family: 'Mont';
-    font-size: 14.5px;
-}
-
-.products .item b{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-    font-size: 17px;
+    text-align: center;
+    padding: 8px;
 }
 
 .bars{
     display: flex;
-    justify-content: space-between;
-    width: 92%;
+    width: 100%;
+    justify-content: space-around;
 }
 
-.catalogBtn{
-    width: 100%;
+.bars p{
+    color: gray !important;
+    font-size: 14px !important;
+    font-family: 'Inter' !important;
+}
+
+.buy-menu{
+    margin-top: 23px;
+    width: 85%;
     display: flex;
-    justify-content: center;
-    height: 115px;
+    justify-content: space-between;
     align-items: center;
 }
 
-.catalogBtn a{
+.buy-menu a, #gotocatalog{
     background: black;
-    color: white;
     width: 140px;
     height: 35px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 13px;
-    font-family: 'Mont';
+    justify-content: center;
+    color: white;
     text-decoration: none;
-    transition: .5s;
-    align-self: stretch;
+    transition: .6s;
+    justify-content: center;
+    font-family: 'Mont';
 }
 
-.catalogBtn a:hover{
-    background: white;
-    color: black;
-    box-shadow: 2px 4px solid black;
+.gotocatalog{
+    height: 193px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#arrow{
+    transition: 1s;
+}
+
+#gotocatalog:hover #arrow{
+    transform: rotate(-90deg) scale(1.06);
+}
+
+#gotocatalog{
+    width: 170px;
+    font-size: 14px;
+}
+
+.buy-menu a:hover{
+    background: rgb(61, 61, 61);
+}
+
+.buy-menu img{
+    padding-left: 20px;
+}
+
+.prices{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.prices p, .prices s{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px !important;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.second-option{
+    margin-right: 41px;
+}
+
+.item p, .item s{
+    font-family: 'Mont';
+    font-size: 15px;
+    letter-spacing: -0.3px;
 }
 
 .advantages{
-    background: #262323;
+    min-height: 450px;
     width: 100%;
-    min-height: 420px;
-    min-width: 1280px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.advantages .item{
-    width: 31%;
-    text-align: center;
-    font-family: 'Mont';
-    font-size: 18px;
+    justify-content: center;
+    background: #262323;
     color: white;
-    border-right: 1px solid #131212;
-    margin: 0 15px;
 }
 
-.advantages .item:nth-child(3){
-    border-right: none;
+/* Контент блока преимуществ */
+.advantages .content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.adv-item{
+    width: 30%;
+    font-size: 19px;
+    font-family: 'Inter';
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+}
+
+.adv-item:nth-child(3){
+    border: none;
+}
+
+.adv-item p{
+    width: 360px;
+}
+
+.gallery{
+    background: #FFEDD8;
+}
+
+.gallery .content{
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0px auto;
+}
+
+.gallery .content img{
+    margin: 12px 0px 0px 5px;
+}
+
+.gallery .content img:nth-child(5){
+    margin-bottom: 50px;
+}
+
+.bio{
+    background: #262323;
+    min-width: 1280px;
+    min-height: 1800px;
+    flex-direction: column;
+}
+
+.bio h1{
+    font-size: 19px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 4px;
+    font-weight: 800;
+    color: white;
+    margin-top: 82px;
+    margin-bottom: 53px;
+}
+
+.bio p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: lighter;
+    color: white;
+
+}
+
+.video-block{
+    height: 365px;
+    align-items: center;
+    justify-content: space-around;
+    width: 1280px;
+    display: flex;
+}
+
+.link-block{
+    width: 100%;
+}
+
+.links{
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    min-width: 1280px;
+}
+
+/* Ховер зум картинки */
+.zoom{
+    overflow:hidden;
+    width: auto;
+    height: auto;
+}
+
+.zoom img {
+    transition: all 1s ease-out;
+}
+    
+.zoom img:hover{
+    transform: scale(1.06);
 }
