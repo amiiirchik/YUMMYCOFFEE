@@ -1,0 +1,504 @@
+@import "fonts/fonts.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;800&display=swap');
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+body{
+    background: #FFEDD8;
+}
+
+/* Сетка */
+.wrap{
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: 'Mont';
+    align-items: center;
+}
+
+.bio .wrap{
+    flex-direction: column;
+    height: 0px;
+}
+
+header{
+    background: #FFEDD8;
+    width: 100%;
+    min-width: 1280px;
+    height: 70px;
+    font-family: 'MontA';
+    font-weight: lighter;
+}
+
+header p{
+    color: #000000;
+    opacity: 50%;
+    font-size: 13px;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* justify-content: space-between;
+    align-items: center; */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 26%;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 47%;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+header span a{
+    color: #928888 !important;
+    transition: .6s;
+}
+
+header span a:hover{
+    color: black !important;
+    letter-spacing: .7px;
+}
+
+/* Видео */
+.banner{
+    width: 100%;
+    height: 550px;
+    background: goldenrod;
+}
+/* Акции */
+.sales{
+    background: #FFEDD8;
+    width: 100%;
+    min-width: 1280px;
+    min-height: 700px;
+}
+
+/* Блок с текстом в Акциях */
+.sales .txt-block{
+    display: flex;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+}
+
+/* Товар */
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1280px;
+    min-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.item{
+    width: 316px;
+    height: 420px;
+    background: #FFFFFF;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 8px;
+}
+
+.bars{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.bars p{
+    color: gray !important;
+    font-size: 14px !important;
+    font-family: 'Inter' !important;
+}
+
+.buy-menu{
+    margin-top: 23px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buy-menu a, #gotocatalog{
+    background: black;
+    width: 140px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: .6s;
+    justify-content: center;
+    font-family: 'Mont';
+}
+
+.gotocatalog{
+    height: 193px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#arrow{
+    transition: 1s;
+}
+
+#gotocatalog:hover #arrow{
+    transform: rotate(-90deg) scale(1.06);
+}
+
+#gotocatalog{
+    width: 170px;
+    font-size: 14px;
+}
+
+.buy-menu a:hover{
+    background: rgb(61, 61, 61);
+}
+
+.buy-menu img{
+    padding-left: 20px;
+}
+
+.prices{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.prices p, .prices s{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px !important;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.second-option{
+    margin-right: 41px;
+}
+
+.item p, .item s{
+    font-family: 'Mont';
+    font-size: 15px;
+    letter-spacing: -0.3px;
+}
+
+.advantages{
+    min-height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #262323;
+    color: white;
+}
+
+/* Контент блока преимуществ */
+.advantages .content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.adv-item{
+    width: 30%;
+    font-size: 19px;
+    font-family: 'Inter';
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+}
+
+.adv-item:nth-child(3){
+    border: none;
+}
+
+.adv-item p{
+    width: 360px;
+}
+
+.gallery{
+    background: #FFEDD8;
+}
+
+.gallery .content{
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0px auto;
+}
+
+.gallery .content img{
+    margin: 12px 0px 0px 5px;
+}
+
+.gallery .content img:nth-child(5){
+    margin-bottom: 50px;
+}
+
+.bio{
+    background: #262323;
+    min-width: 1280px;
+    min-height: 1800px;
+    flex-direction: column;
+}
+
+.bio h1{
+    font-size: 19px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 4px;
+    font-weight: 800;
+    color: white;
+    margin-top: 82px;
+    margin-bottom: 53px;
+}
+
+.bio p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: lighter;
+    color: white;
+
+}
+
+.video-block{
+    height: 365px;
+    align-items: center;
+    justify-content: space-around;
+    width: 1280px;
+    display: flex;
+}
+
+.link-block{
+    width: 100%;
+}
+
+.links{
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    min-width: 1280px;
+}
+
+/* Ховер зум картинки */
+.zoom{
+    overflow:hidden;
+    width: auto;
+    height: auto;
+}
+
+.zoom img {
+    transition: all 1s ease-out;
+}
+    
+.zoom img:hover{
+    transform: scale(1.06);
+}
+.zoom{
+    position: relative;
+}
+
+/* Текст в картинке */
+.text-lft{
+    position: absolute;
+
+}
+.text-lft-title{
+    position: relative;
+    left: 177px;
+    bottom: 67px;
+}
+
+.text-lft-cent{
+    position: relative;
+    left: 27px;
+    bottom: -148px;
+}
+.text-lft-cent > p{
+    font-size: 14px;
+    width: 175px;
+    opacity: 0.5;
+}
+.text-lft-bot{
+    width: 200px;
+    position: absolute;
+    bottom: -242px;
+    left: 27px;
+}
+.text-lft-bot > p{
+    font-size: 20px;
+    
+}
+.text-rght{
+    position: absolute;
+}
+.text-rght-title{
+    position: relative;
+    left: 150px;
+    bottom: 67px;
+}
+.text-rght-cent{
+    position: relative;
+    width: 100px;
+    left: 27px;
+    bottom: -148px;
+}
+.text-rght-cent > p{
+    font-size: 14px;
+    width: 238px;
+    opacity: 0.5;
+}
+.text-rght-bot{
+    width: 200px;
+    position: absolute;
+    bottom: -242px;
+    left: 27px;
+}
+.text-rght-bot > p{
+    font-size: 20px;
+    
+}
+
+/* Подписка на новости */
+.follow{
+    width: 100%;
+    min-height: 500px;
+    background: #EFEFEF;
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik';
+}
+
+.follow-content{
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Mont'; */
+}
+
+input{
+    outline: none;
+}
+
+input::placeholder{
+    font-family: 'Rubik';
+    color: rgb(162, 162, 162);;
+}
+
+.follow-txt-block{
+    text-align: center;
+}
+.box-follow{
+    display: flex;
+    /* margin-top: 31px; */
+}
+
+#email{
+    background-color:#EFEFEF;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid rgb(162, 162, 162);
+}
+
+footer{
+    background: #EFEFEF;
+    width: 100%;
+    display: flex;
+    height: 200px;
+    border-top: 1px solid #a9a9a9;
+}
+
+footer p{
+    color: black;
+}
+
+footer span a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.footer-right{
+    background: #928888;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+}
+
+.footer-left p a, .phone a{
+    transition: .6s;
+    text-decoration: none;
+    animation: rainbow 4s infinite alternate;
+    animation-delay: 1s;
+}
+
+.footer-left span a{
+    transition: .6s;
+}
+
+.footer-left span a:hover{
+    color: rgb(206, 35, 124);
+}
+
+.footer-left p a:hover, .phone a:hover{
+    animation: none;
+    color: rgb(206, 35, 124);
+}
+
+@keyframes rainbow{
+    0%{
+        color: rgb(228, 64, 64);
+    }
+    100%{
+        color: rgb(186, 35, 168);
+    }
+}
