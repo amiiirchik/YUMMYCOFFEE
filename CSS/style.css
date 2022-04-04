@@ -1,6 +1,4 @@
-@import "fonts/fonts.css";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;800&display=swap');
+@import url('fonts.css');
 
 html, body{
     width: 100%;
@@ -21,7 +19,8 @@ body{
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    font-family: 'Mont';
+    font-family: 'Montserrat';
+    font-weight: 300;
     align-items: center;
 }
 
@@ -34,9 +33,9 @@ header{
     background: #FFEDD8;
     width: 100%;
     min-width: 1280px;
-    height: 70px;
-    font-family: 'MontA';
+    height: 65px;
     font-weight: lighter;
+    position: fixed;
 }
 
 header p{
@@ -70,6 +69,8 @@ nav{
 nav a{
     text-decoration: none;
     color: black;
+    font-family: 'Montserrat';
+    font-weight: 300;
 }
 
 header span a{
@@ -158,7 +159,8 @@ header span a:hover{
     text-decoration: none;
     transition: .6s;
     justify-content: center;
-    font-family: 'Mont';
+    font-family: 'Montserrat';
+    font-weight: 300;
 }
 
 .gotocatalog{
@@ -210,7 +212,8 @@ header span a:hover{
 }
 
 .item p, .item s{
-    font-family: 'Mont';
+    font-family: 'Montserrat';
+    font-weight: 300;
     font-size: 15px;
     letter-spacing: -0.3px;
 }
@@ -236,7 +239,7 @@ header span a:hover{
 .adv-item{
     width: 30%;
     font-size: 19px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     text-align: center;
     align-items: center;
     display: flex;
@@ -430,17 +433,18 @@ input::placeholder{
 }
 .box-follow{
     display: flex;
-    /* margin-top: 31px; */
 }
 
+/*Инпут почты*/
 #email{
-    background-color:#EFEFEF;
+    background-color: #EFEFEF;
     border-right: none;
     border-top: none;
     border-left: none;
     border-bottom: 2px solid rgb(162, 162, 162);
 }
 
+/*Футер*/
 footer{
     background: #EFEFEF;
     width: 100%;

@@ -9,36 +9,29 @@ html, body {
 }
 
 body {
-    background: #FFEDD8;
+    background: #E3E3E3;
 }
 
+/*Врап1280*/
 .wrap {
     width: 1280px;
-    height: 100%;
     display: flex;
-    margin: 0 auto;
     justify-content: space-between;
     font-family: 'Montserrat';
     font-weight: 300;
     align-items: center;
-}
-
-.catalog-content{
-    width: 1280px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
+/*Шапка сайта*/
 header {
     background: #FFEDD8;
-    width: 100%;
-    min-width: 1280px;
-    height: 65px;
-    align-items: center;
+    /*min-width: 900px;*/
+    flex-wrap: wrap;
+    min-height: 65px;
     justify-content: center;
     display: flex;
+    flex: 1 1 65px;
 }
 
 header p {
@@ -71,6 +64,7 @@ header nav {
     flex-direction: row;
     width: 47%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header nav a {
@@ -83,118 +77,62 @@ header nav a:hover {
     color: gray;
 }
 
-/*Каталог*/
-.catalog{
+.purchases{
+    font-family: 'Inter', monospace;
     width: 100%;
-    background: seagreen;
-    display: flex;
-    flex-direction: column;
-    min-width: 1300px;
-}
-
-.catalog h1{
-    margin-left: 330px;
-    font-family: 'Rubik';
-    font-weight: 400;
-    font-size: 1.5vw;
-}
-
-/*Продукт*/
-.item{
-    width: 316px;
-    height: 420px;
-    background: #FFFFFF;
     align-items: center;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 8px;
-    margin: 20px 0px;
+    justify-content: center;
+    min-height: 610px;
 }
 
-.item b{
+h1{
+    margin-right: 224px;
+}
+
+h3{
+    text-align: center;
+}
+
+h1, h3{
     font-family: 'Montserrat';
     font-weight: 500;
-} 
+}
 
-/*Прогресс-бары*/
-.bars{
+/*.purchases-content{
     display: flex;
     width: 100%;
-    justify-content: space-around;
 }
 
-.bars p{
-    color: gray !important;
-    font-size: 14px !important;
-    font-family: 'Inter' !important;
-}
-
-/*Цены и кнопка покупки*/
-.buy-menu{
-    margin-top: 23px;
-    width: 85%;
+.profile nav{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.buy-menu a{
-    background: black;
-    width: 140px;
-    height: 35px;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    color: white;
+    text-align: center;
+    height: 17rem;
+}
+
+.profile nav a{
+    margin: 10px 0px;
+    text-align: center;
     text-decoration: none;
-    transition: .6s;
-    justify-content: center;
-    font-family: 'Montserrat';
+    color: black;
+    font-family: 'Rubik', monospace;
     font-weight: 300;
-}
-
-.buy-menu a:hover{
-    background: rgb(61, 61, 61);
-}
-
-.buy-menu img{
-    padding-left: 20px;
-}
-
-.prices{
-    display: flex;
-    width: 60%;
-    justify-content: space-around;
-}
-
-.prices p, .prices s, .sort .buy-menu p{
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif !important;
-    font-size: 14px !important;
     letter-spacing: 1px;
-    font-weight: lighter;
+}*/
+
+
+#purchases{
+    border-bottom: 1px dotted black;
+    padding-bottom: 6px;
 }
 
-.second-option{
-    margin-right: 41px;
+.profile-info{
+    margin: 0 auto;
 }
 
-.item p, .item s{
-    font-family: 'Montserrat';
-    font-weight: 300;
-    font-size: 15px;
-    letter-spacing: -0.3px;
-}
-
-.catalog-content:nth-child(4) .item{
-    height: 340px;
-}
-
-.sort .item{
-    height: 340px !important;
-}
 
 /*Футер*/
 footer{
