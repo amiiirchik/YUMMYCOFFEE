@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../CSS/purchases.css">
-	<title>Профиль</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/sub.css">
+    <title>Document</title>
 </head>
 <body>
-	<header>
+    <header>
 		<div class="wrap">
             <div class="logo">
                 <a href="../../index.html">
@@ -25,41 +25,27 @@
         </div>
     </header>
     <!-- Главный контент страницы -->
-    <div class="purchases">
-        <h1>Заказы</h1>
+    <div class="sub">
+        <h1>Уведомления</h1>
         <div class="wrap">
-            <div class="purchases-content">
+            <div class="sub-content">
                 <nav>
                     <a id="profile" href="profile.html">Профиль</a>
-                    <a id="purchases" href="#">Мои заказы</a>
-                    <a id="sub" href="sub.html">Уведомления</a>
+                    <a id="purchases" href="purchases.html">Мои заказы</a>
+                    <a id="sub" href="#">Уведомления</a>
                     <a id="support" href="support.html">Поддержка</a>
                     <a id="fav" href="fav.html">Избранное</a>
                 </nav>
                 <div class="purchases-info">
-                    <table cellpadding="40">
-                        <tr id="tr">
-                            <td>№ заказа</td>
-                            <td>Кол-во товаров</td>
-                            <td>Статус</td>
-                            <td>Будет доставлен</td>
-                            <td>Стоимость</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                        </tr>
-                    </table>
+                    <p>Для изменения почты или номера телефона перейдите во вкладку “Профиль”.
+                    </p>
+                    <div class="input-content">
+                        <label for="email">
+                            <input type="checkbox" id="email">
+                            <p>Получать уведомления о новинках и акциях</p>
+                        </label>
+                    </div>
+                    <p>Вы получаете уведомления на </p>
                 </div>
             </div>
         </div>

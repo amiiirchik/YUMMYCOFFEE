@@ -91,7 +91,7 @@ h1, h3{
     font-weight: 500;
 }
 
-.purchases{
+.sub{
     font-family: 'Inter', monospace;
     width: 100%;
     align-items: center;
@@ -102,12 +102,12 @@ h1, h3{
 
 }
 
-.purchases-content{
+.sub-content{
     display: flex;
     width: 100%;
 }
 
-.purchases nav{
+.sub nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,7 +125,7 @@ tr{
     text-align: center;
 }
 
-.purchases nav a{
+.sub nav a{
     margin: 10px 0px;
     text-align: center;
     text-decoration: none;
@@ -135,16 +135,33 @@ tr{
     letter-spacing: 1px;
 }
 
-
-#purchases{
+/* Текущий пункт меню */
+#sub{
     border-bottom: 1px dotted black;
     padding-bottom: 6px;
 }
 
-.purchases-info{
+.sub-info{
     margin: 0 auto;
 }
 
+.input-content{
+    font-size: 13px;
+    text-align: center;
+    background: red;
+    display: flex;
+    width: 300px;
+}
+
+.input-content input{
+    width: 25px;
+    height: 25px;
+    background: white;
+}
+
+.input-content p{
+    text-align: center;
+}
 
 /*Футер*/
 footer{

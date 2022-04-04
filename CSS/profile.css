@@ -38,6 +38,7 @@ header p {
     color: #000000;
     opacity: 50%;
     font-size: 13px;
+    font-family: 'Rubik Glitch';
 }
 
 header span a {
@@ -83,8 +84,8 @@ header nav a:hover {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-height: 610px;
+    justify-content: flex-start;
+    min-height: 906px;
 }
 
 h1{
@@ -207,7 +208,6 @@ footer span a{
 }
 
 .footer-right{
-    background: #928888;
     display: flex;
     flex-direction: column;
     width: 30%;
