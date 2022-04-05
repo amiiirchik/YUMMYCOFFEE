@@ -1,26 +1,34 @@
 @import url('fonts.css');
 
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
+
+nav a{
+    display: ;
 }
+
 
 body {
-    background: #FFEDD8;
+    background: #E3E3E3;
+    scroll-behavior: smooth;
 }
 
-.wrap {
-    width: 1280px;
-    height: 100%;
+/*Каталог*/
+.catalog{
+    width: 100%;
     display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    font-family: 'Montserrat';
-    font-weight: 300;
-    align-items: center;
+    flex-direction: column;
+    min-width: 1300px;
+    margin-top: 50px; 
+}
+
+img[src="../img/coffee_m.png"]{
+    margin-top: 20px;
+}
+
+.first-option{cursor: pointer;}
+
+.second-option{
+    color: grey;
+    cursor: pointer;
 }
 
 .catalog-content{
@@ -31,73 +39,42 @@ body {
     flex-wrap: wrap;
 }
 
-header {
-    background: #FFEDD8;
-    width: 100%;
-    min-width: 1280px;
-    height: 65px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-header p {
-    color: #000000;
-    opacity: 50%;
-    font-size: 13px;
-    font-family: 'Rubik Glitch';
-}
-
-header span a {
-    color: #928888 !important;
-    transition: .6s;
-    font-family: 'Montserrat';
-    font-weight: 500;
-}
-
-header span a:hover {
-    color: black !important;
-    letter-spacing: .7px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    width: 26%;
-    justify-content: space-between;
-}
-
-header nav {
-    display: flex;
-    flex-direction: row;
-    width: 47%;
-    justify-content: space-between;
-}
-
-header nav a {
-    transition: .7s;
-    text-decoration: none;
-    color: black;
-}
-
-header nav a:hover {
-    color: gray;
-}
-
-/*Каталог*/
-.catalog{
-    width: 100%;
-    background: seagreen;
-    display: flex;
-    flex-direction: column;
-    min-width: 1300px;
-}
-
 .catalog h1{
     margin-left: 330px;
     font-family: 'Rubik';
-    font-weight: 400;
+    font-weight: 200;
     font-size: 1.5vw;
+}
+
+.menu nav{
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu nav a{
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #E3E3E3;
+    transition: .7s;
+    font-family: 'Comfortaa';
+}
+
+.menu nav a:hover{
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.menu h1{
+    font-weight: 400;
+}
+
+.menu{
+    font-family: 'Rubik';
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /*Продукт*/
@@ -195,67 +172,4 @@ header nav a:hover {
 
 .sort .item{
     height: 340px !important;
-}
-
-/*Футер*/
-footer{
-    background: #EFEFEF;
-    width: 100%;
-    display: flex;
-    height: 200px;
-    border-top: 1px solid #a9a9a9;
-}
-
-footer p{
-    color: black;
-}
-
-footer span a{
-    color: black;
-    text-decoration: none;
-}
-
-.footer-left{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-}
-
-.footer-right{
-    background: #928888;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 100%;
-    justify-content: center;
-}
-
-.footer-left p a, .phone a{
-    transition: .6s;
-    text-decoration: none;
-    animation: rainbow 4s infinite alternate;
-    animation-delay: 1s;
-}
-
-.footer-left span a{
-    transition: .6s;
-}
-
-.footer-left span a:hover{
-    color: rgb(206, 35, 124);
-}
-
-.footer-left p a:hover, .phone a:hover{
-    animation: none;
-    color: rgb(206, 35, 124);
-}
-
-@keyframes rainbow{
-    0%{
-        color: rgb(228, 64, 64);
-    }
-    100%{
-        color: rgb(186, 35, 168);
-    }
 }

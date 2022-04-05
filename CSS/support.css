@@ -1,9 +1,5 @@
 @import url('fonts.css');
 
-body {
-    background: #E3E3E3;
-}
-
 h3{
     text-align: center;
 }
@@ -13,7 +9,7 @@ h1, h3{
     font-weight: 500;
 }
 
-.purchases{
+.sup{
     font-family: 'Inter', monospace;
     width: 100%;
     align-items: center;
@@ -24,12 +20,12 @@ h1, h3{
 
 }
 
-.purchases-content{
+.sup-content{
     display: flex;
-    width: 100%;
+    width: 90%;
 }
 
-.purchases nav{
+.sup nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,17 +33,7 @@ h1, h3{
     height: 17rem;
 }
 
-#tr{
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-}
-
-tr{
-    text-align: center;
-}
-
-.purchases nav a{
+.sup nav a{
     margin: 10px 0px;
     text-align: center;
     text-decoration: none;
@@ -58,10 +44,47 @@ tr{
 }
 
 /* Текущий пункт меню */
-#purchases{
+#support{
     font-weight: 500;
 }
 
-.purchases-info{
+.sup-info{
     margin: 0 auto;
+    width: 700px;
+}
+
+.txtar{
+    position: relative;
+}
+
+.btn-block a{
+    background: black;
+    width: 140px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: .6s;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    position: absolute;
+}
+
+.sup-info p{
+    line-height: 50px;
+}
+
+.sup-info b{
+    font-weight: 500;
+}
+
+.sup-info p a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-weight: 500;
+    animation: rainbow 4s infinite alternate;
 }

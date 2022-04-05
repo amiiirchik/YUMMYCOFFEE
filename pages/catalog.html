@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/popup.css">
     <link rel="stylesheet" href="../CSS/catalog.css">
     <title>Каталог</title>
 </head>
@@ -18,24 +19,68 @@
                     <p>Интернет-магазин свежего кофе.</p>
                 </div>
                 <nav>
-                    <a href="#">Купить</a>
+                    <!-- <ul>
+                        <li> -->
+                            <a href="#">Купить</a>
+                            <!-- <ul>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                            </ul>
+                            
+                        </li>                           
+                    </ul> -->
                     <a href="#">О компании</a>
                     <a href="#"><img src="../img/cart.png" alt="basket"></a>
                     <a href="Account/profile.html"><img src="../img/user.png" width="26" height="25" alt="profile"></a>
-                    <span><a href="#">Вход</a> | <a href="#">Регистрация</a></span>
+                    <span><a id="login" href="#">Вход</a> | <a href="#">Регистрация</a></span>
                 </nav>
             </div>
         </div>
-    </header>
-    <!-- Фильтры -->
-    <div class="filters">
-        <nav>
-            
-        </nav>
+
+        <!-- Попап -->
+        <div id="mypopup" class="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h4>Войти</h4>
+                <span id="close-window">&times;</span>
+            </div>
+            <div class="popup-body">
+                <input class="login-input" type="email" required placeholder="Почта">
+                <input class="login-input" type="password" required placeholder="Пароль">
+                <div class="popup-btn-block">  
+                    <input type="submit" value="Войти" id="popup-btn">
+                </div>
+            </div>
+        </div>
     </div>
+    </header>
+
+    <!-- Фильтры -->
+    <div class="menu">
+        <h1>Каталог</h1>
+        <div class="wrap">
+            <nav>
+                <a href="#coffee_z">Зерновой кофе</a>
+                <a href="#coffee_m">Молотый кофе</a>
+                <a href="#coffee_r">Растворимый кофе</a>
+                <a href="#coffee_a">Аксессуары</a>
+            </nav>
+        </div>
+
+    </div>    
     <!-- Каталог товаров -->
     <div class="catalog">
-        <h1>Зерновой кофе</h1>
+        <h1 id="coffee_z">Зерновой кофе</h1>
         <div class="catalog-content">
             <div class="item product-item-left">
                 <b>ГОНДУРАС САН МАРКОС</b>
@@ -398,13 +443,13 @@
                 </div>
             </div>
         </div>
-        <h1>Молотый кофе</h1>
+        <h1 id="coffee_m">Молотый кофе</h1>
 
         <div class="catalog-content">
         
             <div class="item product-item-left">
                 <b>ГОНДУРАС САН МАРКОС</b>
-                <img src="img/guatemala-fancy-025.png" width="170" height="170" alt="coffee">
+                <img src="../img/coffee_m.png" width="150" height="150" alt="coffee">
                 <p>Плотный кофе с нотами шоколада, лесных ягод, банана, грецкого ореха и легкой цитрусовой кислотностью</p>
                 <div class="buy-menu">
                     <div class="prices">
@@ -418,7 +463,7 @@
             </div>
             <div class="item product-item-left">
                 <b>ГОНДУРАС САН МАРКОС</b>
-                <img src="img/guatemala-fancy-025.png" width="170" height="170" alt="coffee">
+                <img src="../img/coffee_m.png" width="150" height="150" alt="coffee">
                 <p>Плотный кофе с нотами шоколада, лесных ягод, банана, грецкого ореха и легкой цитрусовой кислотностью</p>
                 <div class="buy-menu">
                     <div class="prices">
@@ -432,7 +477,7 @@
             </div>
             <div class="item product-item-left">
                 <b>ГОНДУРАС САН МАРКОС</b>
-                <img src="img/guatemala-fancy-025.png" width="170" height="170" alt="coffee">
+                <img src="../img/coffee_m.png" width="150" height="150" alt="coffee">
                 <p>Плотный кофе с нотами шоколада, лесных ягод, банана, грецкого ореха и легкой цитрусовой кислотностью</p>
                 <div class="buy-menu">
                     <div class="prices">
@@ -446,7 +491,7 @@
             </div>
             <div class="item product-item-left">
                 <b>ГОНДУРАС САН МАРКОС</b>
-                <img src="img/guatemala-fancy-025.png" width="170" height="170" alt="coffee">
+                <img src="../img/coffee_m.png" width="150" height="150" alt="coffee">
                 <p>Плотный кофе с нотами шоколада, лесных ягод, банана, грецкого ореха и легкой цитрусовой кислотностью</p>
                 <div class="buy-menu">
                     <div class="prices">
@@ -460,7 +505,7 @@
             </div>
             <div class="item product-item-left">
                 <b>ГОНДУРАС САН МАРКОС</b>
-                <img src="img/guatemala-fancy-025.png" width="170" height="170" alt="coffee">
+                <img src="../img/coffee_m.png" width="150" height="150" alt="coffee">
                 <p>Плотный кофе с нотами шоколада, лесных ягод, банана, грецкого ореха и легкой цитрусовой кислотностью</p>
                 <div class="buy-menu">
                     <div class="prices">
@@ -474,7 +519,7 @@
             </div>
             <div class="item product-item-left">
                 <b>ГОНДУРАС САН МАРКОС</b>
-                <img src="img/guatemala-fancy-025.png" width="170" height="170" alt="coffee">
+                <img src="../img/coffee_m.png" width="150" height="150" alt="coffee">
                 <p>Плотный кофе с нотами шоколада, лесных ягод, банана, грецкого ореха и легкой цитрусовой кислотностью</p>
                 <div class="buy-menu">
                     <div class="prices">
@@ -488,7 +533,7 @@
             </div>
             <div class="item product-item-left">
                 <b>ГОНДУРАС САН МАРКОС</b>
-                <img src="img/guatemala-fancy-025.png" width="170" height="170" alt="coffee">
+                <img src="../img/coffee_m.png" width="150" height="150" alt="coffee">
                 <p>Плотный кофе с нотами шоколада, лесных ягод, банана, грецкого ореха и легкой цитрусовой кислотностью</p>
                 <div class="buy-menu">
                     <div class="prices">
@@ -502,7 +547,7 @@
             </div>
             <div class="item product-item-left">
                 <b>ГОНДУРАС САН МАРКОС</b>
-                <img src="img/guatemala-fancy-025.png" width="170" height="170" alt="coffee">
+                <img src="../img/coffee_m.png" width="150" height="150" alt="coffee">
                 <p>Плотный кофе с нотами шоколада, лесных ягод, банана, грецкого ореха и легкой цитрусовой кислотностью</p>
                 <div class="buy-menu">
                     <div class="prices">
@@ -516,7 +561,7 @@
             </div>
             <div class="item product-item-left">
                 <b>ГОНДУРАС САН МАРКОС</b>
-                <img src="img/guatemala-fancy-025.png" width="170" height="170" alt="coffee">
+                <img src="../img/coffee_m.png" width="150" height="150" alt="coffee">
                 <p>Плотный кофе с нотами шоколада, лесных ягод, банана, грецкого ореха и легкой цитрусовой кислотностью</p>
                 <div class="buy-menu">
                     <div class="prices">
@@ -530,7 +575,7 @@
             </div>
         </div>
 
-        <h1>Растворимый кофе</h1>
+        <h1 id="coffee_r">Растворимый кофе</h1>
         <div class="sort">
         <div class="catalog-content">
             <div class="item product-item-left">
@@ -599,7 +644,7 @@
                             <p>250г.</p>
                             <p>400₽</p>
                         </div>
-                        <div class="second-option">
+                        <div class="second-option nopick">
                             <p>600г.</p>
                             <p>800₽</p>
                         </div>
@@ -628,7 +673,7 @@
             </div>
         </div>
 
-        <h1 id="accessories">Аксессуары</h1>
+        <h1 id="coffee_a">Аксессуары</h1>
 
         <div class="catalog-content">
             <div class="item product-item-left">
@@ -698,5 +743,7 @@
             </div>
         </div>
     </footer>
+    <script src="../scripts/anim.js"></script>
+    <script src="../scripts/popup.js"></script>
 </body>
 </html>

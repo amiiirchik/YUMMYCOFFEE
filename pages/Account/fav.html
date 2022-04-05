@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../CSS/sub.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../CSS/fav.css">
+    <title>Избранное</title>
 </head>
 <body>
     <header>
-		<div class="wrap">
+        <div class="wrap">
             <div class="logo">
                 <a href="../../index.html">
                     <img src="../../img/logo.jpg" width="70" height="52" alt="logo">
@@ -25,24 +25,26 @@
         </div>
     </header>
     <!-- Главный контент страницы -->
-    <div class="sub">
-        <h1>Уведомления</h1>
+    <div class="purchases">
+        <h1>Избранное</h1>
         <div class="wrap">
-            <div class="sub-content">
+            <div class="purchases-content">
                 <nav>
                     <a id="profile" href="profile.html">Профиль</a>
                     <a id="purchases" href="purchases.html">Мои заказы</a>
-                    <a id="sub" href="#">Уведомления</a>
+                    <a id="sub" href="sub.html">Уведомления</a>
                     <a id="support" href="support.html">Поддержка</a>
-                    <a id="fav" href="fav.html">Избранное</a>
+                    <a id="fav" href="#">Избранное</a>
                 </nav>
-                <div class="sub-info">
-                    <p>Для изменения почты или номера телефона перейдите во вкладку “Профиль”.
-                    </p>
-                        <label for="email">
-                            <span><input type="checkbox" id="email"><i>Получать уведомления о новинках и акциях</i></span>    
-                        </label>
-                    <p id="emailP" >Вы получаете уведомления на </p>
+                <div class="purchases-info">
+                    <table cellpadding="60">
+                        <tr id="tr">
+                            <td>1</td>
+                            <td><img src="../../img/guatemala-fancy-025.png" width="75" height="75" alt="coffee"></td>
+                            <td>489/1600 ₽</td>
+                            <td><p id="like"></p></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>

@@ -89,7 +89,7 @@ header nav a:hover {
 }
 
 h1{
-    margin-right: 224px;
+    margin-left: 30px;
 }
 
 h3{
@@ -103,7 +103,7 @@ h1, h3{
 
 .profile-content{
     display: flex;
-    width: 100%;
+    width: 90%;
 }
 
 .profile nav{
@@ -124,9 +124,9 @@ h1, h3{
     letter-spacing: 1px;
 }
 
+/* Текущий пункт меню */
 #profile{
-    border-bottom: 1px dotted black;
-    padding-bottom: 6px;
+    font-weight: 500;
 }
 
 .profile-info{
@@ -180,66 +180,4 @@ h1, h3{
 
 .btn-block a:hover{
     background: rgb(61, 61, 61);
-}
-
-/*Футер*/
-footer{
-    background: #EFEFEF;
-    width: 100%;
-    display: flex;
-    height: 200px;
-    border-top: 1px solid #a9a9a9;
-}
-
-footer p{
-    color: black;
-}
-
-footer span a{
-    color: black;
-    text-decoration: none;
-}
-
-.footer-left{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-}
-
-.footer-right{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 100%;
-    justify-content: center;
-}
-
-.footer-left p a, .phone a{
-    transition: .6s;
-    text-decoration: none;
-    animation: rainbow 4s infinite alternate;
-    animation-delay: 1s;
-}
-
-.footer-left span a{
-    transition: .6s;
-}
-
-.footer-left span a:hover{
-    color: rgb(206, 35, 124);
-}
-
-.footer-left p a:hover, .phone a:hover{
-    animation: none;
-    color: rgb(206, 35, 124);
-}
-
-@keyframes rainbow{
-    0%{
-        color: rgb(228, 64, 64);
-    }
-    100%{
-        color: rgb(186, 35, 168);
-    }
 }

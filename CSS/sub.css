@@ -1,85 +1,7 @@
 @import url('fonts.css');
 
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-}
-
 body {
     background: #E3E3E3;
-}
-
-/*Врап1280*/
-.wrap {
-    width: 1280px;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Montserrat';
-    font-weight: 300;
-    align-items: center;
-    margin: 0 auto;
-}
-
-/*Шапка сайта*/
-header {
-    background: #FFEDD8;
-    /*min-width: 900px;*/
-    flex-wrap: wrap;
-    min-height: 65px;
-    justify-content: center;
-    display: flex;
-    flex: 1 1 65px;
-}
-
-header p {
-    color: #000000;
-    opacity: 50%;
-    font-size: 13px;
-    font-family: 'Rubik Glitch';
-}
-
-header span a {
-    color: #928888 !important;
-    transition: .6s;
-    font-family: 'Montserrat';
-    font-weight: 500;
-}
-
-header span a:hover {
-    color: black !important;
-    letter-spacing: .7px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    width: 26%;
-    justify-content: space-between;
-}
-
-header nav {
-    display: flex;
-    flex-direction: row;
-    width: 47%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-header nav a {
-    transition: .7s;
-    text-decoration: none;
-    color: black;
-}
-
-header nav a:hover {
-    color: gray;
-}
-
-h1{
-    margin-right: 224px;
 }
 
 h3{
@@ -104,7 +26,7 @@ h1, h3{
 
 .sub-content{
     display: flex;
-    width: 100%;
+    width: 90%;
 }
 
 .sub nav{
@@ -113,16 +35,6 @@ h1, h3{
     justify-content: center;
     text-align: center;
     height: 17rem;
-}
-
-#tr{
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-}
-
-tr{
-    text-align: center;
 }
 
 .sub nav a{
@@ -137,105 +49,35 @@ tr{
 
 /* Текущий пункт меню */
 #sub{
-    border-bottom: 1px dotted black;
-    padding-bottom: 6px;
+    font-weight: 500;
 }
 
 .sub-info{
     margin: 0 auto;
 }
 
-.input-content{
-    font-size: 13px;
-    text-align: center;
-    background: red;
-    display: flex;
-    width: 300px;
-}
-
-.input-content input{
+.sub-info input{
     width: 25px;
     height: 25px;
     background: white;
 }
 
-.input-content p{
-    text-align: center;
+.sub-info p{
+    margin: 27px;
 }
 
-/*Футер*/
-footer{
-    background: #EFEFEF;
-    width: 100%;
+#emailP{
+    font-size: 12px;
+}
+
+.sub-info span{
     display: flex;
-    height: 200px;
-    border-top: 1px solid #a9a9a9;
 }
 
-footer p{
-    color: black;
-}
-
-footer span a{
-    color: black;
-    text-decoration: none;
-}
-
-.footer-left{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-}
-
-.footer-right{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 100%;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.footer-right p{
-    font-family: 'Caveat';
-    font-size: 40px;
-}
-
-.footer-left p a, .phone a{
-    transition: .6s;
-    text-decoration: none;
-    animation: rainbow 4s infinite alternate;
-    animation-delay: 1s;
-}
-
-.footer-left span a{
-    transition: .6s;
-}
-
-.footer-left span a:hover{
-    color: rgb(206, 35, 124);
-}
-
-.footer-left p a:hover, .phone a:hover{
-    animation: none;
-    color: rgb(206, 35, 124);
-}
-
-.footer-social img{
-    transition: 2s;
-    margin: 35px 10px 0px 10px;
-}
-
-.footer-social img:hover{
-    transform: rotate(360deg);
-}
-
-@keyframes rainbow{
-    0%{
-        color: rgb(228, 64, 64);
-    }
-    100%{
-        color: rgb(186, 35, 168);
-    }
+.sub-info span i{
+    display: block;
+    font-style: normal;
+    width: 200px;
+    margin-left: 15px;
+    font-size: 12px;
 }
