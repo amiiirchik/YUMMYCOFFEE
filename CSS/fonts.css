@@ -89,6 +89,17 @@ header nav a:hover {
     color: gray;
 }
 
+#like{
+    background: url('../img/like.png');
+    width: 31px;
+    height: 29px;  
+    display: block;
+    filter: grayscale(100%);
+}
+
+.second-option p{
+    filter: grayscale(100%);
+}
 
 /*Футер*/
 footer{
@@ -116,17 +127,12 @@ footer span a{
 }
 
 .footer-right{
+    background: #928888;
     display: flex;
     flex-direction: column;
     width: 30%;
     height: 100%;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.footer-right p{
-    font-family: 'Caveat';
-    font-size: 40px;
+    justify-content: center;
 }
 
 .footer-left p a, .phone a{
@@ -147,15 +153,6 @@ footer span a{
 .footer-left p a:hover, .phone a:hover{
     animation: none;
     color: rgb(206, 35, 124);
-}
-
-.footer-social img{
-    transition: 2s;
-    margin: 35px 10px 0px 10px;
-}
-
-.footer-social img:hover{
-    transform: rotate(360deg);
 }
 
 @keyframes rainbow{
