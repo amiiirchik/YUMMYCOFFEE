@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/popup.css">
+    <link rel="stylesheet" href="CSS/basket.css">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Интернет-магазин YUMMYCOFFEE</title>
 </head>
@@ -17,14 +18,29 @@
                     <p>Интернет-магазин свежего кофе.</p>
                 </div>
                 <nav>
-                    <a href="#">Купить</a>
-                    <a href="#">О компании</a>
-                    <a href="#"><img src="img/cart.png" alt="basket"></a>
+                    <a href="pages/catalog.html">Купить</a>
+                    <a href="#company">О компании</a>
+                    <a href="#"><img id="basket-link" src="img/cart.png" alt="basket"></a>
                     <a href="pages/Account/profile.html"><img src="img/user.png" width="26" height="25" alt="profile"></a>
                     <span id="profileSpan"><a id="login" href="#">Вход</a> | <a href="#">Регистрация</a></span>
                 </nav>
             </div>
         </div>
+        <!-- Корзина -->
+        <div class="basket">
+            <div class="basket-wrap">
+                <table>
+                    <tr>
+                        <td>ГОНДУРАС САН МАРКОС</td>
+                        <td>1</td>
+                        <td>489 ₽</td>
+                        <td><a id="deleteProduct" href="">Удалить</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
                 <!-- Попап -->
         <div id="mypopup" class="popup">
             <div class="popup-content">
@@ -44,16 +60,17 @@
     </header>
     <!-- Видео -->
     <div class="banner">
-        <!-- <div class="wrap"> -->
-            <!-- <iframe controls=0  width="1903" height="600" src="img/production ID_4820118v2.mp4"></iframe>
-            <p></p> -->
-            <video loop="loop" autoplay="autoplay" muted="muted">
-                <source src="img/video-banner.mp4" type="video/mp4">
-            </video>
-        <!-- </div> -->
+        <video loop="loop" autoplay="autoplay" muted="muted">
+            <source src="img/video-banner.mp4" type="video/mp4">
+        </video>
+        <div class="text-wrap">
+            <p>Каждый день</p>
+            <p>обжариваем кофе</p>
+            <p>И доставляем его вам</p>
+        </div>
     </div>
     <!-- Акции -->
-    <div class="sales">
+    <div class="sales">`
         <div class="wrap">
             <div class="txt-block">
                 <p>До конца акции осталось</p> &nbsp <p id="timer">0 дн. 00:00:00</p>
@@ -72,8 +89,7 @@
                     </div>
                     <div class="right-bar">
                         <p>Кислотность</p>
-                        <img src="" alt="bar">
-                        <img src="" alt="bar">
+                        <img src="img/progress-bar.png" alt="bar">
                     </div>
                 </div>
                 <div class="buy-menu">
@@ -83,7 +99,7 @@
                             <s>700₽</s>
                             <p>489₽</p>
                         </div>
-                        <div class="second-option">
+                        <div class="second-option unselected">
                             <p>800г.</p>
                             <s>1700₽</s>
                             <p>1300₽</p>
@@ -103,8 +119,7 @@
                     </div>
                     <div class="right-bar">
                         <p>Кислотность</p>
-                        <img src="" alt="bar">
-                        <img src="" alt="bar">
+                        <img src="img/progress-bar.png" alt="bar">
                     </div>
                 </div>
                 <div class="buy-menu">
@@ -114,7 +129,7 @@
                             <s>700₽</s>
                             <p>489₽</p>
                         </div>
-                        <div class="second-option">
+                        <div class="second-option unselected">
                             <p>800г.</p>
                             <s>1700₽</s>
                             <p>1300₽</p>
@@ -134,8 +149,7 @@
                     </div>
                     <div class="right-bar">
                         <p>Кислотность</p>
-                        <img src="" alt="bar">
-                        <img src="" alt="bar">
+                        <img src="img/progress-bar.png" alt="bar">
                     </div>
                 </div>
                 <div class="buy-menu">
@@ -145,7 +159,7 @@
                             <s>700₽</s>
                             <p>489₽</p>
                         </div>
-                        <div class="second-option">
+                        <div class="second-option unselected">
                             <p>800г.</p>
                             <s>1700₽</s>
                             <p>1300₽</p>
@@ -156,7 +170,7 @@
             </div>         
         </div>
         <div class="gotocatalog">
-            <a id="gotocatalog" href="#">Перейти в каталог <span id="arrow">➞</span></a>
+            <a id="gotocatalog" href="pages/catalog.html">Перейти в каталог <span id="arrow">➞</span></a>
         </div>
     </div>
     <div class="advantages">
@@ -191,7 +205,7 @@
         </div>
     </div>
     <!-- О компании -->
-    <div class="bio">
+    <div id="company" class="bio">
         <div class="wrap">
             <h1>Производство свежеобжаренного кофе</h1>
             <p>Мы обжариваем кофе больше 15 лет. На протяжении всего этого времени мы учимся новому, совершенствуем и разрабатываем новые технологии обжарки. <br><br>
@@ -228,7 +242,7 @@
                             <img src="img/Rectangle 143.png" alt="link">
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="pages/catalog.html #coffee_a">
                         <div class="zoom">
                             <div class="text-rght">
                                 <div class="text-rght-title">
@@ -297,7 +311,8 @@
             </div>
         </div>
     </footer>
-    <script src="../scripts/anim.js"></script>
-    <script src="../scripts/popup.js"></script>
+    <script src="scripts/anim.js"></script>
+    <script src="scripts/basket.js"></script>
+    <script src="scripts/popup.js"></script>
 </body>
 </html>

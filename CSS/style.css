@@ -1,5 +1,9 @@
 @import url('fonts.css');
 
+body{
+    background: #FFEDD8;
+}
+
 .bio .wrap{
     flex-direction: column;
     height: 0px;
@@ -14,20 +18,46 @@
 }
 
 header{
+    z-index: 1;
     position: fixed;
 }
 
 video{
-    height: 793px;
+    height: 585px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.text-wrap{
+    position: absolute;
+    top: 109px;
+    left: 383px;
+    color: white;
+}
+
+.first-option,
+.second-option{
+    cursor: pointer;
+}
+
+.unselected{
+    color: grey;
+}
+
+.text-wrap *{
+    font-size: 42px;
+    letter-spacing: -1px;
+    font-family: 'Montserrat';
+    line-height: 31px;
 }
 
 /* Видео */
 .banner{
     display: flex;
-/*    width: 100%;
-    height: 700px;
-    background: url('../img/video-banner.mp4');*/
+    height: 585px;
 }
+
+
 /* Акции */
 .sales{
     background: #FFEDD8;
@@ -58,7 +88,7 @@ video{
 
 .item{
     width: 316px;
-    height: 420px;
+    height: 440px;
     background: #FFFFFF;
     align-items: center;
     display: flex;

@@ -1,0 +1,12 @@
+.basket{
+    display: none;
+}
+
+.basket-wrap{
+    width: 90%;
+    height: 90%;
+    background: green;
+    position: absolute;
+    top: 100px;
+    right: 500px;
+}
