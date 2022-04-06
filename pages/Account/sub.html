@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/popup.css">
     <link rel="stylesheet" href="../../CSS/sub.css">
     <title>Document</title>
 </head>
@@ -20,8 +21,24 @@
                 <a href="#">О компании</a>
                 <a href="#"><img src="../../img/cart.png" alt="basket"></a>
                 <a href="#"><img src="../../img/user.png" width="26" height="25" alt="profile"></a>
-                <span><a href="#">Вход</a> | <a href="#">Регистрация</a></span>
+                <span id="profileSpan"><a id="login" href="#">Вход</a> | <a href="#">Регистрация</a></span>
             </nav>
+        </div>
+                <!-- Попап -->
+        <div id="mypopup" class="popup">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <h4>Войти</h4>
+                    <span id="close-window">&times;</span>
+                </div>
+                <div class="popup-body">
+                    <input id="email" class="login-input" type="email" required placeholder="Почта">
+                    <input id="password" class="login-input" type="password" required placeholder="Пароль">
+                    <div class="popup-btn-block">  
+                        <input type="submit" value="Войти" id="popup-btn">
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <!-- Главный контент страницы -->
@@ -73,5 +90,7 @@
             </div>
         </div>
     </footer>
+    <script src="../../scripts/anim.js"></script>
+    <script src="../../scripts/popup.js"></script>
 </body>
 </html>

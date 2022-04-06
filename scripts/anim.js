@@ -4,8 +4,8 @@ let links = document.querySelectorAll('a[href^="#"]');
 for (let link of links) {
     link.addEventListener('click', function (e) {
         e.preventDefault();
-        let goto = link.getAttribute('href');
-        document.querySelector(goto).scrollIntoView({
+        let id = link.getAttribute('href');
+        document.querySelector(id).scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         });

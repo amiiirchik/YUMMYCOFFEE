@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интернет-магазин YUMMYCOFFEE</title>
+    <link rel="stylesheet" href="CSS/popup.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <title>Интернет-магазин YUMMYCOFFEE</title>
 </head>
 <body>
     <header>
@@ -20,16 +21,35 @@
                     <a href="#">О компании</a>
                     <a href="#"><img src="img/cart.png" alt="basket"></a>
                     <a href="pages/Account/profile.html"><img src="img/user.png" width="26" height="25" alt="profile"></a>
-                    <span><a href="#">Вход</a> | <a href="#">Регистрация</a></span>
+                    <span id="profileSpan"><a id="login" href="#">Вход</a> | <a href="#">Регистрация</a></span>
                 </nav>
             </div>
-        </div> 
+        </div>
+                <!-- Попап -->
+        <div id="mypopup" class="popup">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <h4>Войти</h4>
+                    <span id="close-window">&times;</span>
+                </div>
+                <div class="popup-body">
+                    <input class="login-input" type="email" required placeholder="Почта">
+                    <input class="login-input" type="password" required placeholder="Пароль">
+                    <div class="popup-btn-block">  
+                        <input type="submit" value="Войти" id="popup-btn">
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- Видео -->
     <div class="banner">
         <!-- <div class="wrap"> -->
-            <iframe width="1920" height="100%" src="img/production ID_4820118.mp4"></iframe>
-            <p></p>
+            <!-- <iframe controls=0  width="1903" height="600" src="img/production ID_4820118v2.mp4"></iframe>
+            <p></p> -->
+            <video loop="loop" autoplay="autoplay" muted="muted">
+                <source src="img/video-banner.mp4" type="video/mp4">
+            </video>
         <!-- </div> -->
     </div>
     <!-- Акции -->
@@ -277,5 +297,7 @@
             </div>
         </div>
     </footer>
+    <script src="../scripts/anim.js"></script>
+    <script src="../scripts/popup.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+.dnone{
+    display: none;
+}
+
 .popup{
     display: none;
     position: fixed;
@@ -41,8 +45,7 @@
     color: white;
     margin: 0 auto;
     border: 1px solid grey;
-    animation-name: topanimation;
-    animation-duration: 0.6s;
+    animation: 0.6s topanimation;
     display: flex;
     flex-flow: column wrap;
 }
@@ -51,8 +54,12 @@
     width: 180px;
     height: 30px;
     outline: none;
-    border: none;
+    border: 1px solid white;
     margin: 20px 0px;
+}
+
+.closeAnimation{
+    animation: 1s botanimation;
 }
 
 .login-input{
@@ -70,6 +77,7 @@
     display: flex;
     align-items: center;
 }
+
 #popup-btn{
     width: 120px;
     height: 35px;
@@ -107,14 +115,13 @@
     }
 }
 
-@keyframes leftright{
-    0%{
-        margin-left: -10px;
+@keyframes botanimation {
+    from{
+        top: 0;
+        opacity: 1;
     }
-    50%{
-        margin-left: 10px;
-    }
-    100%{
-        margin-left: 0px;
+    to{
+        top: -300px;
+        opacity: 0; 
     }
 }

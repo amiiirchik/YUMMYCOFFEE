@@ -22,6 +22,7 @@
 }
 
 .price{
+    font-size: 17px;
     display: flex;
     justify-content: space-around;
 }
@@ -49,7 +50,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: .7s;
+    transition: .6s;
 }
 
 .btn-block span img{
@@ -61,8 +62,7 @@
 }
 
 .btn-block a:hover{
-    background: white;
-    color: black;
+    background: #4A4A4A;
 }
 
 .btn-block span{
@@ -79,25 +79,90 @@
     height: 70%
 }
 
+.left-bar img,
+.right-bar img{
+    width: 150px;
+    height: 3px;
+}
+
+.selected{
+    border-bottom: 1px solid white;
+    padding-bottom: 6px;
+}
+
+.selected-black{
+    border-bottom: 1px solid black;
+}
+
+.first-option{
+    transition: .7s;
+    cursor: pointer;
+}
+
+.second-option{
+    transition: .7s;
+    color: grey;
+    cursor: pointer;
+}
+
+.first-option:hover,
+.second-option:hover{
+    letter-spacing: .2px;
+}
+
 .product-info{
     background: #262323;
-    width: 100%;
-    min-height: 50%;
+    min-height: 70%
 }
 
 .product-info nav{
-    width: 40%;
-    background: green;
+    width: 58%;
+    height: 120px;
+    font-family: 'Montserrat';
+    font-size: 18px;
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .product-info nav a{
     transition: .7s;
-
+    color: white;
+    text-decoration: none;
 }
 
 .product-info nav a:hover{
+    letter-spacing: .8px;
+}
 
+.product-content,
+.reviews-block{
+    font-size: 19px;
+    font-family: 'Montserrat';
+    color: white;
+    width: 1280px;
+    margin: 0 auto;
+    font-weight: 200;
+    flex-wrap: wrap;
+}
+
+.reviews-block{
+    height: 760px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review{
+    width: 350px;
+    height: 300px;
+    border: 1px solid white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-content p{
+    line-height: 25px;
 }
