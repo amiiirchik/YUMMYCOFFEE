@@ -1,6 +1,6 @@
 let basketBtn = document.getElementById('basket-link');
 let basket = document.querySelector('.basket');
-
+let deleteBtn = document.getElementById('deleteProduct');
 
 basketBtn.addEventListener('click', showBasket);
 
@@ -14,4 +14,9 @@ function hideBasket(){
     basket.style.display = "none";
     this.removeEventListener('click', hideBasket);
     this.addEventListener('click', showBasket);
+}
+
+deleteBtn.onclick = () => {
+    let tbody = document.querySelector('tbody');
+    deleteBtn.parentElement.parentElement.remove();
 }
