@@ -2,18 +2,18 @@ let basketBtn = document.getElementById('basket-link');
 let basket = document.querySelector('.basket');
 let deleteBtn = document.getElementById('deleteProduct');
 
-basketBtn.addEventListener('click', showBasket);
+basketBtn.addEventListener('mouseover', showBasket);
 
 function showBasket(){
     basket.style.display = "block";
-    this.removeEventListener('click', showBasket);
-    this.addEventListener('click', hideBasket);
+    this.removeEventListener('mouseover', showBasket);
+    this.addEventListener('mouseout', hideBasket);
 }
 
 function hideBasket(){
     basket.style.display = "none";
-    this.removeEventListener('click', hideBasket);
-    this.addEventListener('click', showBasket);
+    this.removeEventListener('mouseout', hideBasket);
+    this.addEventListener('mouseover', showBasket);
 }
 
 deleteBtn.onclick = () => {
