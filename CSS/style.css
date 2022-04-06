@@ -4,6 +4,10 @@ body{
     background: #FFEDD8;
 }
 
+.dnone{
+    display: none !important;
+}
+
 .bio .wrap{
     flex-direction: column;
     height: 0px;
@@ -13,8 +17,17 @@ body{
     display: flex;
     width: 100%;
     height: 100%;
-    /* justify-content: space-between;
-    align-items: center; */
+}
+
+.hover-item{
+    display: none;
+    width: 316px;
+    height: 440px;
+    background: #FFFFFF;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 8px;
 }
 
 header{

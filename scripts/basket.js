@@ -6,17 +6,16 @@ basketBtn.addEventListener('mouseover', showBasket);
 
 function showBasket(){
     basket.style.display = "block";
-    this.removeEventListener('mouseover', showBasket);
-    this.addEventListener('mouseout', hideBasket);
+    basketBtn.removeEventListener('mouseover', showBasket);
+    basket.addEventListener('mouseout', hideBasket);
 }
 
 function hideBasket(){
-    basket.style.display = "none";
-    this.removeEventListener('mouseout', hideBasket);
-    this.addEventListener('mouseover', showBasket);
+    basket.removeEventListener('mouseout', hideBasket);
+    basket.addEventListener('mouseout', ()=>{
+        basket.style.display = "none";
+    });
+    basketBtn.addEventListener('mouseover', showBasket);
 }
 
-deleteBtn.onclick = () => {
-    let tbody = document.querySelector('tbody');
-    deleteBtn.parentElement.parentElement.remove();
-}
+deleteBtn.onclick= () => { deleteBtn.parentElement.parentElement.remove(); }
