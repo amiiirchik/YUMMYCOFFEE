@@ -50,7 +50,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: .6s;
+    transition: .45s;
 }
 
 .btn-block span img{
@@ -62,7 +62,8 @@
 }
 
 .btn-block a:hover{
-    background: #4A4A4A;
+    /* background: #4A4A4A; */
+    transform: skewX(-8deg);
 }
 
 .btn-block span{
@@ -91,12 +92,23 @@
 }
 
 .selected-black{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid black !important;
+}
+
+.selected-black p{
+    color: black;
 }
 
 .first-option{
+    color: grey;
     transition: .7s;
     cursor: pointer;
+}
+
+.first-option,
+.second-option{
+    transition: .8s;
+    border-bottom: 1px solid #E3E3E3;
 }
 
 .second-option{
@@ -107,7 +119,7 @@
 
 .first-option:hover,
 .second-option:hover{
-    letter-spacing: .2px;
+    letter-spacing: .3px;
 }
 
 .product-info{

@@ -13,7 +13,7 @@
     width: 400px;
     min-height: 100px;
     position: relative;
-    background: white;
+    background: green;
     display: flex;
     text-align: center;
 }

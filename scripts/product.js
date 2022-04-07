@@ -21,15 +21,11 @@ let firstPrice = document.querySelector('.first-option')
 let secondPrice = document.querySelector('.second-option');
 
 secondPrice.onclick = () => {
-	secondPrice.style.color = "black";
 	secondPrice.classList.add('selected-black');
-	firstPrice.style.color = "grey";
 	firstPrice.classList.remove('selected-black');
 }
 
 firstPrice.onclick = () => {
-	secondPrice.style.color = "grey";
 	secondPrice.classList.remove('selected-black');
-	firstPrice.style.color = "black";
 	firstPrice.classList.add('selected-black');
 }

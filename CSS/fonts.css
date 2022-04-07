@@ -99,6 +99,13 @@ header nav a:hover {
     height: 29px;  
     display: block;
     filter: grayscale(100%);
+    transition: .8s;
+    cursor: pointer;
+}
+
+.filter{
+    transform: scale(1.05);
+    filter: grayscale(0%) !important;
 }
 
 .second-option p{
