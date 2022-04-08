@@ -2,6 +2,7 @@
 
 body{
     background: #FFEDD8;
+    animation: 1s opacity;
 }
 
 .dnone{
@@ -19,20 +20,28 @@ body{
     height: 100%;
 }
 
-.hover-item{
+#hover-item{
+    font-family: 'Montserrat';
     display: none;
     width: 316px;
     height: 440px;
     background: #FFFFFF;
     align-items: center;
+    justify-content: space-around;
     flex-direction: column;
     text-align: center;
     padding: 8px;
+    transition: .7s;
+}
+
+#items{
+    cursor: pointer;
 }
 
 header{
     z-index: 1;
     position: fixed;
+    animation: opacity 1.5s;
 }
 
 video{
@@ -46,6 +55,20 @@ video{
     top: 109px;
     left: 383px;
     color: white;
+    animation: 2s opacity;
+}
+
+
+.text-wrap p{
+    font-size: 42px;
+    letter-spacing: -1px;
+    font-family: 'Montserrat';
+    line-height: 31px;
+    /*animation: opacity 4s;*/
+}
+
+#padding{
+    padding-right: 43px;
 }
 
 .first-option,
@@ -57,17 +80,11 @@ video{
     color: grey;
 }
 
-.text-wrap *{
-    font-size: 42px;
-    letter-spacing: -1px;
-    font-family: 'Montserrat';
-    line-height: 31px;
-}
-
 /* Видео */
 .banner{
     display: flex;
     height: 585px;
+    position: relative;
 }
 
 
@@ -87,6 +104,33 @@ video{
     align-items: center;
     justify-content: space-around;
     font-size: 22px;
+}
+
+.opacity{
+    animation: opacity 1s;
+    display: flex;
+}
+
+.opacity-rev{
+    animation: rev-opacity .5s;
+}
+
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes rev-opacity{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 /* Товар */
@@ -200,6 +244,12 @@ video{
     letter-spacing: -0.3px;
 }
 
+.item b{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin-top: 7px;
+}
+
 .advantages{
     min-height: 450px;
     width: 100%;
@@ -216,6 +266,7 @@ video{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-left: 85px;
 }
 
 .adv-item{
@@ -308,6 +359,7 @@ video{
     overflow:hidden;
     width: auto;
     height: auto;
+    position: relative;
 }
 
 .zoom img {
@@ -379,10 +431,11 @@ video{
     
 }
 
+
 /* Подписка на новости */
 .follow{
     width: 100%;
-    min-height: 500px;
+    min-height: 400px;
     background: #EFEFEF;
     display: flex;
     align-items: center;
@@ -392,11 +445,38 @@ video{
 .follow-content{
     width: 1280px;
     height: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     /* font-family: 'Mont'; */
 }
+
+.follow-txt-block{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#subBtn{
+    width: 130px;
+    height: 40px;
+    background: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.b-contain *, .b-contain *::before, .b-contain *::after {
+    box-sizing: content-box !important;
+}
+
+
 
 input{
     outline: none;
@@ -423,65 +503,7 @@ input::placeholder{
     border-bottom: 2px solid rgb(162, 162, 162);
 }
 
-/*Футер*/
-footer{
-    background: #EFEFEF;
-    width: 100%;
-    display: flex;
-    height: 200px;
-    border-top: 1px solid #a9a9a9;
-}
-
-footer p{
-    color: black;
-}
-
-footer span a{
-    color: black;
-    text-decoration: none;
-}
-
-.footer-left{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-}
-
-.footer-right{
-    background: #928888;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 100%;
-    justify-content: center;
-}
-
-.footer-left p a, .phone a{
-    transition: .6s;
-    text-decoration: none;
-    animation: rainbow 4s infinite alternate;
-    animation-delay: 1s;
-}
-
-.footer-left span a{
-    transition: .6s;
-}
-
-.footer-left span a:hover{
-    color: rgb(206, 35, 124);
-}
-
-.footer-left p a:hover, .phone a:hover{
-    animation: none;
-    color: rgb(206, 35, 124);
-}
-
-@keyframes rainbow{
-    0%{
-        color: rgb(228, 64, 64);
-    }
-    100%{
-        color: rgb(186, 35, 168);
-    }
+#sale{
+    border-bottom: 1px solid black;
+    padding-bottom: 7px;
 }

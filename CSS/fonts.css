@@ -4,16 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
-*{
-    box-sizing: border-box;
-}
-
 html, body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 body {
@@ -138,12 +135,25 @@ footer span a{
 }
 
 .footer-right{
-    background: #928888;
     display: flex;
     flex-direction: column;
-    width: 30%;
     height: 100%;
     justify-content: center;
+}
+
+.footer-right img{
+    margin: 0px 10px;
+    transition: 1.6s;
+}
+
+.footer-right img:hover{
+    transform: rotate(360deg);
+}
+
+.footer-right p{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 24px;
+    text-align: center;
 }
 
 .footer-left p a, .phone a{
@@ -165,6 +175,8 @@ footer span a{
     animation: none;
     color: rgb(206, 35, 124);
 }
+
+
 
 @keyframes rainbow{
     0%{

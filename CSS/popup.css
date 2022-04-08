@@ -10,17 +10,17 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     font-family: 'Inter';
     font-weight: 300;
 }
 
 .popup-header{
-    background-color: white;
+    background-color: #FFEDD8;
     display: flex;
     padding: 15px;
     width: auto;
-    height: 7px;
+    height: 12px;
     align-items: center;
     color: black;
 }
@@ -39,23 +39,35 @@
 
 .popup-content{
     width: 400px;
-    height: 300px;
+    height: 420px;
     position: relative;
-    background-color: #262343;
-    color: white;
-    margin: 0 auto;
+    background-color: #fff;
+    color: black;
+    margin: 120px auto;
     border: 1px solid grey;
     animation: 0.6s topanimation;
     display: flex;
     flex-flow: column wrap;
 }
 
+.popup-content label{
+    display: flex;
+    background: green;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .popup-content input{
     width: 180px;
     height: 30px;
     outline: none;
-    border: 1px solid white;
+    border: none;
+    border-bottom: 1px solid black;
     margin: 20px 0px;
+}
+
+.popup-content p{
+    font-family: 'Inter';
 }
 
 .closeAnimation{
@@ -64,11 +76,18 @@
 
 .login-input{
     transition: .8s;
+    width: 180px;
+    height: 30px;
+    outline: none;
+    border: none;
+
+    border-bottom: 1px solid black;
+    margin: 20px 0px;
 }
 
 .login-input:focus{
-    background: black;
-    color: white;
+    background: #FFEDD8;
+    color: black;
 }
 
 .popup-btn-block{
